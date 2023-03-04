@@ -1,3 +1,6 @@
+# fly.toml file generated for organicshopkota on 2023-03-04T11:12:54+09:00
+
+app = "organicshopkota"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
