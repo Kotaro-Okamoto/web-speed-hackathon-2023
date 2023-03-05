@@ -1,13 +1,16 @@
-declare module 'zipcode-ja' {
-  export default Record<
-    string,
+export type Address = {
+  message: null;
+  results: [
     {
+      address1: string;
+      address2: string;
+      address3: string;
+      kana1: string;
+      kana2: string;
+      kana3: string;
+      prefcode: string;
       zipcode: string;
-      zipcodeOld: string;
-      jisX0402: string;
-      address: string[];
-      ruby: string[];
-      status: number[];
-    }
-  >;
-}
+    },
+  ];
+  status: 200 | 400 | 500;
+};
